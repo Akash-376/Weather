@@ -1,0 +1,5 @@
+package com.wise.controller;
+
+public class weatherController {
+
+}

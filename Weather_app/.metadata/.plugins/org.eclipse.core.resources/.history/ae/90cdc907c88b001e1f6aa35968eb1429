@@ -1,0 +1,12 @@
+
+# Database connection properties for SQL Server
+spring.datasource.url=jdbc:sqlserver://localhost:3306;databaseName=weather
+spring.datasource.username=sa
+spring.datasource.password=root
+spring.datasource.driver-class-name=com.microsoft.sqlserver.jdbc.SQLServerDriver
+
+# Hibernate properties
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.SQLServerDialect
+

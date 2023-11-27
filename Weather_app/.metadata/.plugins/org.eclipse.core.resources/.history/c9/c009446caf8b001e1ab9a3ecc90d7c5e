@@ -1,0 +1,5 @@
+package com.wise.model;
+
+public class Weather {
+
+}

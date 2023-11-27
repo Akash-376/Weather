@@ -1,0 +1,53 @@
+<!--<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+</head>
+<body>
+    <h1>Welcome to the Weather Dashboard!</h1>
+    <form action="/storeData" method="post">
+	    <input type="text" name="city">
+	    <button type="submit">Search</button>
+	</form>
+	
+</body>
+</html>-->
+
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Weather App</title>
+
+</head>
+<body>
+<div style="color:white; text-align:center">
+	<img src="images/weatherL.png" style=" height: auto;width: auto;filter: drop-shadow(10px 10px 10px black);">
+    <h1>Welcome to Weather Web App</h1>
+
+     <form action="/storeData" method="post" class="searchInput" onsubmit="encodeCityName()">
+    <input type="text" placeholder="Enter City Name" id="searchInput" name="city" />
+    <button id="searchButton"><i class="fa-solid fa-magnifying-glass"></i></button>
+	</form>
+	
+	<script>
+	    function encodeCityName() {
+	        var cityNameInput = document.getElementById("searchInput");
+	        if (cityNameInput) {
+	            // Encode the city name and update the input value
+	            cityNameInput.value = encodeURIComponent(cityNameInput.value);
+	        }
+	    }
+	</script>   
+ </div>
+ 
+</body>
+</html>
+
